@@ -19,6 +19,7 @@
         android:layout_weight="1"
         android:paddingBottom="5dp">
         <Button
+
             android:background="@drawable/left_btn_bg"
             android:id="@+id/btn_home"
             android:layout_centerInParent="true"
