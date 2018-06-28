@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:weightSum="9"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"></FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="5dp">
+        <Button
+            android:background="@drawable/left_btn_bg"
+            android:id="@+id/btn_home"
+            android:layout_centerInParent="true"
+            android:layout_width="100dp"
+            android:text="Home"
+
+            android:textColor="#fff"
+            android:layout_toLeftOf="@id/btn_office"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_office"
+            android:layout_centerInParent="true"
+            android:layout_width="100dp"
+            android:text="Office"
+            android:textColor="#fff"
+            android:background="@drawable/center_btn_bg"
+            android:layout_height="match_parent" />
+        <Button
+            android:background="@drawable/right_btn_bg"
+            android:id="@+id/btn_others"
+            android:layout_centerInParent="true"
+            android:layout_width="100dp"
+            android:text="Others"
+            android:textColor="#fff"
+            android:layout_toRightOf="@id/btn_office"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
